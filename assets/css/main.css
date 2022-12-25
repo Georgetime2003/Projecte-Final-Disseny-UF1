@@ -1,6 +1,9 @@
 .bg-2d6{
     background: rgb(153,255,204);
     background: radial-gradient(circle, rgba(153,255,204,1) 60%, rgba(255,255,255,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .carousel-item > div {
     height: 100%;
