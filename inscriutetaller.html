@@ -63,7 +63,7 @@
                                 Tallers
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Magic</a></li>
+                                <li><a class="dropdown-item" href="infotaller.html">Magic</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -99,11 +99,32 @@
             </button>
         </div>
         <div class="container-fluid">
-            <!--Mostrar detall producte-->
+            <!--Formulari per inscriure't al taller-->
             <div class="row">
                 <div class="col-12">
-                    
+                    <h1 class="text-center">Inscripció al taller</h1>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="nom" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="nom" name="nom" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cognom" class="form-label">Cognom</label>
+                            <input type="text" class="form-control" id="cognom" name="cognom" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="npersones" class="form-label">N de Persones</label>
+                            <input type="number" class="form-control" id="npersones" name="npersones" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comentaris" class="form-label">Per què Vols inscriure't al taller?</label>
+                            <textarea class="form-control" id="comentaris" name="comentaris" rows="3"></textarea>
+                        </div>
+                        <a href="#" onclick="alert('Inscripció realitzada correctament')" class="btn btn-primary">Inscriure's</a>
             <footer class="row">
                 <br>
                 <!--Imatge logo Alineat al centre-->
