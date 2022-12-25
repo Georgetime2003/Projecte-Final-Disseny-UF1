@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2d6</title>
+    <link rel="icon" href="assets/img/dausLogo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/bootstrap/jquery-3.5.1.min.js"></script>
+    <script src="assets/bootstrap/popper.min.js"></script>
+    <script src="https://kit.fontawesome.com/24202bad1a.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-2d6">
+    <nav class="navbar">
+        <div class="container-fluid">
+            <img src="assets/img/2d6jocs.svg" alt="2d6" width="60" height="100%" class="d-inline-block align-text-top">
+            <form class="d-flex" role="search">
+                <button class="btn btn-outline-info" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <a class="btn btn-outline-info" href="cistella.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            </form>
+            
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú 2d6</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inici</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Jocs de Rol</a></li>
+                                <li><a class="dropdown-item" href="#">Jocs de Taula</a></li>
+                                <li><a class="dropdown-item" href="#">Jocs de Cartes</a></li>
+                                <li><a class="dropdown-item" href="#">Jocs de Societat</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quisom.html">Qui Som?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tallers
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Magic</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="assets/img/background1.jpeg" class="d-block w-100" width="100%" height="400">
+
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/background2.jpeg" class="d-block w-100" width="100%" height="400">
+
+                </div>
+                <div class="carousel-item active">
+                    <img src="assets/img/background3.jpeg" class="d-block w-100" width="100%" height="400">
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container-fluid">
+            <div class="row align-items-center border-bottom border-warning">
+                <div class="col-9">
+                    <p>Articles</p>
+                </div>
+                <div class="col-1">
+                    <div>
+                        <p>Filtra Per:</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <select class="d-flex form-select">
+                        <option selected>Seleccioni Filtre</option>
+                        <option value="1">Preu</option>
+                        <option value="2">Nom</option>
+                        <option value="3">Categoria</option>
+                    </select>
+                </div>
+                <br>
+            </div>
+            <div class="row bg-light">
+                <!--Columna per les categories dels articles-->
+                <div class="col-3">
+                    <div class="row">
+                        <!--Titol Categoria-->
+                        <div class="col-12 border border-dark">
+                            <h3>Categories</h3>
+                        </div>
+                        <!--Categories-->
+                        <div class="col-12 border">
+                            <!--Llista-->
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Jocs de Rol</li>
+                                <li class="list-group-item">Jocs de Taula</li>
+                                <li class="list-group-item">Jocs de Cartes</li>
+                                <li class="list-group-item">Jocs de Societat</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <!--Articles en card-->
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="assets/img/uno.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="descarticle.html">Joc de Cartes</a></h5>
+                                    <a href="descarticle.html" class="card-text">Joc de Cartes</a>
+                                    <a href="cistella.html" class="btn btn-primari">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="assets/img/uno.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="descarticle.html">Joc de Cartes</a></h5>
+                                    <a href="descarticle.html" class="card-text">Joc de Cartes</a>
+                                    <a href="cistella.html" class="btn btn-primari">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="assets/img/uno.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="descarticle.html">Joc de Cartes</a></h5>
+                                    <a href="descarticle.html" class="card-text">Joc de Cartes</a>
+                                    <a href="cistella.html" class="btn btn-primari">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="assets/img/uno.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="descarticle.html">Joc de Cartes</a></h5>
+                                    <a href="descarticle.html" class="card-text">Joc de Cartes</a>
+                                    <a href="cistella.html" class="btn btn-primari">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="assets/img/uno.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="descarticle.html">Joc de Cartes</a></h5>
+                                    <a href="descarticle.html" class="card-text">Joc de Cartes</a>
+                                    <a href="cistella.html" class="btn btn-primari">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="assets/img/uno.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="descarticle.html">Joc de Cartes</a></h5>
+                                    <a href="descarticle.html" class="card-text">Joc de Cartes</a>
+                                    <a href="cistella.html" class="btn btn-primari">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="row">
+                <br>
+                <!--Imatge logo Alineat al centre-->
+                <div class="col-12 d-flex justify-content-center">
+                    <img src="assets/img/dausLogo.svg" alt="Logo" width="100" height="100">
+                </div>
+            </footer>
+        </div>
+
+    </main>
+</body>
+
+</html>

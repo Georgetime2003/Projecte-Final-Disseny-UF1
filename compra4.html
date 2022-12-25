@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2d6</title>
+    <link rel="icon" href="assets/img/dausLogo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/bootstrap/jquery-3.5.1.min.js"></script>
+    <script src="assets/bootstrap/popper.min.js"></script>
+    <script src="https://kit.fontawesome.com/24202bad1a.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-2d6">
+    <nav class="navbar">
+        <div class="container-fluid">
+            <img src="assets/img/2d6jocs.svg" alt="2d6" width="60" height="100%" class="d-inline-block align-text-top">
+            <form class="d-flex" role="search">
+                <button class="btn btn-outline-info" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <a class="btn btn-outline-info" href="cistella.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </form>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú 2d6</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inici</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Jocs de Rol</a></li>
+                                <li><a class="dropdown-item" href="#">Jocs de Taula</a></li>
+                                <li><a class="dropdown-item" href="#">Jocs de Cartes</a></li>
+                                <li><a class="dropdown-item" href="#">Jocs de Societat</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quisom.html">Qui Som?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tallers
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Magic</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div>
+            <!--Mostrar direcció d'enviament, dades de la targeta en una columna dreta, i donar opcio a seleccionar mètode d'enviament-->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Detall de la compra</h5>
+                            <br>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6>Direcció</h6>
+                                            <p>Direcció per res inventada 21, 17300, Blanes, Girona</p>
+                                            <br>
+                                            <h6>Mètode Pagament</h6>
+                                            <h6>Targeta</h6>
+                                            <p>**** **** **** 1234</p>
+                                            <p>**/**           ***</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5>Mètode d'Enviament</h5>
+                                            <label for="empresatransport" class="form-check-label">Empresa de transport</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Selecciona un mètode d'enviament</option>
+                                                <option value="1">Correus</option>
+                                                <option value="2">DHL</option>
+                                                <option value="3">UPS</option>
+                                            </select>
+                                            <div class="mb-3"></div>
+                                            <label for="agilitatenviament">Tipus d'enviament</label>
+                                            <select class="form-select">
+                                                <option selected>Selecciona un tipus d'enviament</option>
+                                                <option value="1">Express</option>
+                                                <option value="2">Normal</option>
+                                            </select>    
+                                        </div>                                            
+                                    </div>
+                                    <div class="justify-content-end">
+                                        <h4>Total: 24,95€</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-between">
+                            <a class="btn btn-secondary" href="compra3.html" role="button">Tornar</a>
+                            <a class="btn btn-primari" href="comprafi.html" role="button">Pagar</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <br>
+        <footer class="row">
+            <br>
+            <div class="col-12 d-flex justify-content-center">
+                <img src="assets/img/dausLogo.svg" alt="Logo" width="100" height="100">
+            </div>
+        </footer>
+        </div>
+
+    </main>
+</body>
+
+</html>
